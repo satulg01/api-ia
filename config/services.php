@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'grok' => [
+        'api_key' => env('GROK_API_KEY', 'xai-2aaQQkYbHLI6QDkJF2pHrDVwacLg9888sNwDHIj3OJYbSXIfxUJPU2Q4slkb4xp7ehEXdYRUY1ncT31b'),
+    ],
+
 ];
