@@ -1,0 +1,55 @@
+# OpenAI Chat
+POST http://localhost:8000/api/openai-chat
+Content-Type: application/json
+
+{
+    "question": "Qual a capital do Brasil?"
+}
+
+###
+
+# Groq Chat
+POST http://localhost:8000/api/groq-chat
+Content-Type: application/json
+
+{
+    "question": "Qual a capital do Brasil?",
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.7,
+    "max_tokens": 100
+}
+
+###
+
+# Hugging Face Chat
+POST http://localhost:8000/api/huggingface-chat
+Content-Type: application/json
+
+{
+    "model": "deepseek/deepseek-v3-0324",
+    "question": "Qual a capital do Brasil?"
+}
+
+###
+
+# Chat Completion (Formato OpenAI/Modern)
+POST http://localhost:8000/api/chat/completions
+Content-Type: application/json
+
+{
+    "messages": [
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "Explique o que é inteligência artificial em uma frase."
+                }
+            ]
+        }
+    ],
+    "model": "microsoft/DialoGPT-medium",
+    "stream": false,
+    "temperature": 0.7,
+    "max_tokens": 100
+}

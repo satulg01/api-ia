@@ -39,4 +39,16 @@ return [
         'api_key' => env('GROK_API_KEY', 'xai-2aaQQkYbHLI6QDkJF2pHrDVwacLg9888sNwDHIj3OJYbSXIfxUJPU2Q4slkb4xp7ehEXdYRUY1ncT31b'),
     ],
 
+    'openai' => [
+        'api_key' => env('OPENAI_API_KEY', ''),
+    ],
+
+    'huggingface' => [
+        'api_key' => env('HUGGINGFACE_API_KEY', ''),
+    ],
+
+    'groq' => [
+        'api_key' => env('GROQ_API_KEY', ''),
+    ],
+
 ];
