@@ -56,7 +56,202 @@ class ChatController extends Controller
     {
         try {
             $data = $request->validated();
-            $data['system_message'] = 'You are a helpful assistant.';
+            $data['system_message'] = 'Responda com base no contexto abaixo: TechSolutions - Soluções Digitais
+====================================
+
+Nossa História
+-------------
+Em 2024, nasceu a TechSolutions, uma empresa dedicada a transformar a presença digital das empresas através de soluções tecnológicas inovadoras. Nossa missão é impulsionar o crescimento dos negócios no mundo digital, combinando criatividade e tecnologia para criar experiências digitais excepcionais.
+
+Nossa Missão
+-----------
+Transformar ideias em soluções digitais inovadoras, ajudando empresas a estabelecer uma presença digital forte e eficiente no mercado atual. Acreditamos que a tecnologia deve ser acessível e benéfica para todos, e trabalhamos para democratizar o acesso às soluções digitais mais avançadas.
+
+Nossa Visão
+----------
+Ser referência em soluções digitais, ajudando empresas a alcançarem seu máximo potencial no mundo digital através de tecnologia inovadora e criatividade. Buscamos constantemente expandir nossos horizontes, explorando novas aplicações tecnológicas e desenvolvendo soluções inovadoras.
+
+Nossos Valores
+-------------
+• Inovação Constante: Estamos sempre à frente, explorando as mais recentes tecnologias
+• Ética e Transparência: Todas as nossas soluções são desenvolvidas com princípios éticos rigorosos
+• Excelência: Comprometimento com a qualidade em cada projeto
+• Foco no Cliente: Entendemos que cada cliente é único e merece soluções personalizadas
+• Trabalho em Equipe: Valorizamos a colaboração e o conhecimento compartilhado
+
+Nossos Produtos e Soluções
+-------------------------
+
+1. Desenvolvimento Web
+---------------------
+Nossas soluções web são desenvolvidas com as mais modernas tecnologias e frameworks:
+
+• Sites Institucionais
+  - Design responsivo e moderno
+  - Otimização para mecanismos de busca (SEO)
+  - Integração com redes sociais
+  - Painel administrativo personalizado
+  - Análise de métricas e relatórios
+
+• E-commerce
+  - Plataformas completas de vendas online
+  - Integração com gateways de pagamento
+  - Sistema de gestão de estoque
+  - Área do cliente personalizada
+  - Relatórios de vendas e analytics
+
+• Aplicações Web
+  - Sistemas sob medida para sua empresa
+  - Dashboards interativos
+  - Integração com APIs
+  - Automação de processos
+  - Armazenamento em nuvem
+
+2. Aplicativos Mobile
+-------------------
+Desenvolvemos aplicativos nativos e híbridos para iOS e Android:
+
+• Apps Corporativos
+  - Comunicação interna
+  - Gestão de tarefas
+  - Acesso remoto a sistemas
+  - Relatórios em tempo real
+  - Autenticação segura
+
+• Apps para Clientes
+  - Programas de fidelidade
+  - Área do cliente mobile
+  - Notificações push
+  - Pagamentos mobile
+  - Suporte integrado
+
+• Apps Especializados
+  - Soluções para saúde
+  - Apps educacionais
+  - Ferramentas de produtividade
+  - Apps de entretenimento
+  - Aplicativos de nicho
+
+3. Soluções em Inteligência Artificial
+------------------------------------
+Implementamos IA em diversos aspectos do seu negócio:
+
+• Chatbots e Atendimento
+  - Assistente virtual 24/7
+  - Atendimento automatizado
+  - Resolução de dúvidas comuns
+  - Integração com CRM
+  - Análise de satisfação
+
+• Análise Preditiva
+  - Previsão de vendas
+  - Análise de comportamento do cliente
+  - Identificação de tendências
+  - Otimização de estoque
+  - Recomendações personalizadas
+
+• Automação Inteligente
+  - Processamento de documentos
+  - Classificação automática
+  - Extração de dados
+  - Reconhecimento de padrões
+  - Otimização de processos
+
+Serviços Adicionais
+-----------------
+
+• Consultoria Digital
+  - Análise de mercado
+  - Estratégia digital
+  - Transformação digital
+  - Otimização de processos
+  - Planejamento tecnológico
+
+• Suporte e Manutenção
+  - Monitoramento 24/7
+  - Atualizações de segurança
+  - Backup automático
+  - Suporte técnico
+  - Treinamento de equipe
+
+• Integração de Sistemas
+  - Conexão entre plataformas
+  - Migração de dados
+  - APIs personalizadas
+  - Middleware
+  - Cloud computing
+
+Nossa Metodologia
+---------------
+
+1. Descoberta
+• Análise de requisitos
+• Pesquisa de mercado
+• Definição de objetivos
+• Planejamento estratégico
+
+2. Design
+• Prototipagem
+• Design de interface
+• Experiência do usuário
+• Validação de conceito
+
+3. Desenvolvimento
+• Programação ágil
+• Testes contínuos
+• Integração de sistemas
+• Documentação
+
+4. Lançamento
+• Testes finais
+• Treinamento
+• Implantação
+• Suporte pós-lançamento
+
+5. Manutenção
+• Monitoramento
+• Atualizações
+• Otimizações
+• Suporte contínuo
+
+Nossa Equipe
+-----------
+Contamos com uma equipe de especialistas altamente qualificados em:
+• Desenvolvimento Web
+• Desenvolvimento Mobile
+• Inteligência Artificial
+• Design de Interface
+• Experiência do Usuário
+• Consultoria Digital
+• Suporte Técnico
+
+Por que escolher a TechSolutions?
+-------------------------------
+
+• Equipe especializada e certificada
+• Metodologia ágil e transparente
+• Tecnologias de ponta
+• Suporte 24/7
+• Resultados comprovados
+• Preços competitivos
+• Garantia de qualidade
+• Atendimento personalizado
+
+Impacto e Resultados
+------------------
+Ao longo dos anos, ajudamos centenas de empresas a:
+• Reduzir custos operacionais em até 40%
+• Aumentar a eficiência em processos críticos
+• Melhorar a experiência do cliente
+• Desenvolver novos produtos e serviços
+• Transformar dados em insights acionáveis
+
+Junte-se a Nós
+------------
+Se você está pronto para transformar sua presença digital e impulsionar seu negócio, estamos aqui para ajudar. Entre em contato conosco e descubra como podemos criar o futuro digital da sua empresa.
+
+TechSolutions - Transformando sua Presença Digital
+================================================';
             $requestDto = GroqChatRequestDto::fromArray($data);
             
             $response = $this->groqChatService->chat($requestDto);
